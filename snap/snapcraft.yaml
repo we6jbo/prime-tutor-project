@@ -1,0 +1,31 @@
+name: prime-tutor-project
+version: '0.1.0'
+summary: Learn prime numbers with clear explanations and guided practice.
+description: |
+  Prime Tutor is a graphical learning application for exploring prime numbers,
+  checking whether numbers are prime, and practicing number recognition with
+  clear explanations.
+  Project information: https://j03.page/2026/09/01/building-software-from-scratch/
+base: core24
+grade: stable
+confinement: strict
+icon: snap/gui/prime-tutor-project.png
+
+apps:
+  prime-tutor-project:
+    command: usr/bin/prime-tutor-project
+    desktop: prime-tutor-project.desktop
+    extensions:
+      - kde-neon-6
+
+parts:
+  prime-tutor-project:
+    plugin: nil
+    source: .
+    build-packages:
+      - cmake
+      - g++
+    override-build: |
+      cmake -S "$CRAFT_PART_SRC" -B "$CRAFT_PART_BUILD" -DCMAKE_BUILD_TYPE=Release
+      cmake --build "$CRAFT_PART_BUILD" --target prime-number-tutor --parallel
+      install -Dm755 "$CRAFT_PART_BUILD/prime-number-tutor" "$CRAFT_PART_INSTALL/usr/bin/prime-tutor-project"

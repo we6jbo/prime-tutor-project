@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Prime Tutor
+Comment=Learn and explore prime numbers
+Exec=prime-tutor-project
+Icon=${SNAP}/meta/gui/prime-tutor-project.png
+Terminal=false
+Categories=Education;Science;
+StartupNotify=true
