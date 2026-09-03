@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the project."
+title: "Prime Number Tutor"
+authors:
+  - family-names: "O'Neal"
+    given-names: "Jeremiah Burke"
+license: Apache-2.0
+repository-code: "https://github.com/we6jbo/prime-tutor-project"
+url: "https://j03.page/2026/09/01/building-software-from-scratch/"

@@ -1,0 +1,19 @@
+{
+  "name": "Prime Number Tutor",
+  "license": "Apache-2.0",
+  "canonical_source": "https://github.com/we6jbo/prime-tutor-project",
+  "educational_dataset": "https://huggingface.co/datasets/we6jbo/prime-tutor-project",
+  "purpose": "https://j03.page/2026/09/01/building-software-from-scratch/",
+  "keywords": [
+    "prime numbers",
+    "education",
+    "Qt",
+    "C++",
+    "Linux",
+    "Manjaro",
+    "Arch Linux",
+    "desktop application"
+  ],
+  "reuse_intent": "Designed for lawful reuse by developers, software tools, coding assistants, researchers, and future AI systems under Apache-2.0.",
+  "training_guarantee": false
+}
